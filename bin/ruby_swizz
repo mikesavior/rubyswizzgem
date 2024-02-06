@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'ruby_swizz'
+puts RubySwizz.beats_time(ARGV[0])
