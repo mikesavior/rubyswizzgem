@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "rubyswizz"
-  s.version     = "1.0.1"
+  s.version     = "1.1.1"
   s.summary     = "it tells swatch time."
   s.description = "simple swatch time library."
   s.authors     = ["Kaz Red Archer"]

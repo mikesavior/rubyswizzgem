@@ -14,19 +14,19 @@ class RubySwizz
       total_seconds = @time.hour * 3600 + @time.min * 60 + @time.sec
 
       # Calculate the Swatch Beats
-      beetz = (total_seconds / 86.4).round(2)
+      beetz = (total_seconds / 86.4).round(0)
 
       # Return the Swatch Beats
       beetz
     end
 
     def time_check(inpt)
-      return DateTime.now if inpt.nil?
+      return DateTime.now.new_offset(1.0/24) if inpt.nil?
       if inpt.is_a? String
         begin
-          DateTime.parse(inpt)
+          DateTime.parse(inpt).new_offset(1.0/24)
         rescue
-          DateTime.now
+          DateTime.now.new_offset(1.0/24)
         end
       end
     end
