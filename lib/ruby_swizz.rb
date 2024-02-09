@@ -14,7 +14,7 @@ class RubySwizz
       total_seconds = @time.hour * 3600 + @time.min * 60 + @time.sec
 
       # Calculate the Swatch Beats
-      beetz = (total_seconds / 86.4).round(0)
+      beetz = (total_seconds / 86.4).floor
 
       # Return the Swatch Beats
       beetz
